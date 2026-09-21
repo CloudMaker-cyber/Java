@@ -129,3 +129,75 @@ String rs = j + "";
 一开始是空数组，是在第一次添加数据时候扩容的，加满后扩容成原来的1.5倍
 
 #### LinkList底层原理（面试）
+
+![image-20260920205336179](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260920205336179.png)
+
+实际上是基于双链表实现的![image-20260920205443851](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260920205443851.png)
+
+![image-20260920205524618](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260920205524618.png)
+
+#### Linklist应用场景
+
+![image-20260920205800815](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260920205800815.png)
+
+队列先进先出，后进后出
+
+![image-20260920205937361](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260920205937361.png)
+
+### Set集合
+
+#### 特点
+
+![image-20260921170142613](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921170142613.png)
+
+#### HashSet集合的底层原理
+
+[视频教程](https://www.bilibili.com/video/BV1gb42177hm/?spm_id_from=333.788.player.switch&vd_source=2f6779340fa9ff071614a3e2236898ea&p=130)
+
+![image-20260921175905152](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921175905152.png)
+
+![image-20260921180029698](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921180029698.png)
+
+![image-20260921180918489](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921180918489.png)
+
+扩容机制：数组存满数据到16*0.75=12个时，自动扩容，每次扩容到原来的两倍。如第一次扩容后数组长度为32
+
+![image-20260921181210025](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921181210025.png)
+
+红黑树就是可以自平衡的二叉树：每条路上的黑色数据个数要一样
+
+#### 自定义对象去重
+
+![image-20260921182707844](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921182707844.png)
+
+![image-20260921183442703](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921183442703.png)
+
+#### LinkedHashSet集合的底层原理
+
+![image-20260921183903201](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921183903201.png)
+
+#### TreeSet集合
+
+![image-20260921184924824](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921184924824.png)
+
+默认不能给自定义对象排序，因为不知道大小规则。
+
+解决方法:
+
+![image-20260921190627592](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921190627592.png)
+
+![image-20260921185902190](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921185902190.png)
+
+第二种方法
+
+![image-20260921190126168](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921190126168.png)
+
+![image-20260921190421437](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921190421437.png)
+
+![image-20260921190808848](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921190808848.png)
+
+实际开发中常用ArrayLIst和HashSet
+
+## Map集合
+
+![image-20260921230025428](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921230025428.png)
