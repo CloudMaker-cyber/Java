@@ -201,3 +201,143 @@ String rs = j + "";
 ## Map集合
 
 ![image-20260921230025428](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260921230025428.png)
+
+![image-20260922205914678](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922205914678.png)
+
+### 常用方法
+
+![image-20260922210413430](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922210413430.png)
+
+put方法：当key一样时，可以覆盖前面相同的key的值，即可完成值的更新
+
+### 遍历方式
+
+1.键找值：先获取Map集合全部的键，再通过遍历键来找值
+
+![image-20260922211750751](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922211750751.png)
+
+![image-20260922211913539](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922211913539.png)
+
+2.把键值对看成一个整体进行遍历（难度较大）
+
+![image-20260922212504992](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922212504992.png)
+
+3.Lambda（很简单）
+
+![image-20260922214447501](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922214447501.png)
+
+理解源码：
+
+![image-20260922215034415](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922215034415.png)
+
+函数式编程的Lambda简化![image-20260922215254569](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922215254569.png)
+
+### 实现类
+
+![image-20260922220842618](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922220842618.png)
+
+![image-20260922223628158](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922223628158.png)
+
+![image-20260922224357088](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260922224357088.png)
+
+## Stream流
+
+![image-20260923094343276](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923094343276.png)
+
+![image-20260923094407929](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923094407929.png)
+
+![image-20260923094317990](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923094317990.png)
+
+### 获取Stream流
+
+![image-20260923094836236](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923094836236.png)
+
+![image-20260923095447877](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923095447877.png)
+
+### 常用中间方法
+
+![image-20260923105720415](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923105720415.png)
+
+### 常用终结方法
+
+![image-20260923111935693](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923111935693.png)
+
+![image-20260923161417840](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923161417840.png)
+
+流只能收集一次
+
+![image-20260923163605606](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923163605606.png)
+
+![image-20260923163700168](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923163700168.png)
+
+![image-20260923163428755](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923163428755.png)
+
+### 可变参数
+
+![image-20260923164306192](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923164306192.png)
+
+> [!CAUTION]
+>
+> 可变参数在方法内部就是一个数组；可变参数在形参列表中只能有一个；可变参数必须放在形参列表的最后面
+
+### Collections工具类
+
+![image-20260923165606615](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923165606615.png)
+
+## 存储&读写数据的方案
+
+### File
+
+![image-20260923183639230](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923183639230.png)
+
+### 操作
+
+![image-20260923183901324](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923183901324.png)
+
+第一种用的最多
+
+![image-20260923194127129](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923194127129.png)
+
+> [!NOTE]
+>
+> java默认不能删除非空文件夹，但是可以通过方法递归，把文件夹下的文件都删除后，再删除此文件夹
+
+![image-20260923194656909](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923194656909.png)
+
+listFiles更常用
+
+### 方法递归（多级文件搜索）
+
+![image-20260923202210441](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923202210441.png)
+
+![image-20260923202239694](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923202239694.png)
+
+![image-20260923202258592](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923202258592.png)
+
+Runtime那一段是弄了个虚拟机对象，运行代码时可以直接启动qq程序，但是只能运行可执行文件，图片什么的不行
+
+### 字符集
+
+a 97;    A 65
+
+![image-20260923204627870](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923204627870.png)
+
+![image-20260923204959357](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923204959357.png)
+
+UTF-8
+
+![image-20260923205556807](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923205556807.png)
+
+### 字符集的编码解码操作
+
+![image-20260923211342271](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923211342271.png)
+
+![image-20260923210526544](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923210526544.png)
+
+编码解码都是第二个方法用的多
+
+![image-20260923210714059](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923210714059.png)
+
+![image-20260923210912327](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923210912327.png)
+
+![image-20260923211255335](C:\Users\唐诗涵\AppData\Roaming\Typora\typora-user-images\image-20260923211255335.png)
